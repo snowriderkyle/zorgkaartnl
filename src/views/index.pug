@@ -1,0 +1,368 @@
+head
+	script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
+	link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+	link(rel='stylesheet' href='css/style.css')
+	script(src='js/custom.js')
+	script(href='js/custom.js')
+body
+	section.content_section
+		.container.content_section_inner.no_side_padding_mobile.no_top_padding_mobile.collapsable_elements_holder
+			.content_holder
+				.row
+					.col-xs-12.col-sm-8.content_column
+						.content_section_row
+							.sliders_holder
+								small Velden met een * zijn verplicht
+								form(name='rating', method='post', action='/zorginstelling/ziekenhuis-olvg-locatie-west-voorheen-sint-lucas-andreas-ziekenhuis-amsterdam-109428/waardeer', novalidate='novalidate', onsubmit='this.rating_submit.disabled=true;', role='form')
+									ul.striped_box.sliders_list
+										li.media.slider
+											.left_media_holder
+												label.title.question-title
+													| Afspraken
+													span.required
+												a.popover_trigger.fontello-help(data-content='Hoe verliep het maken van afspraken? En komt de organisatie/medewerker gemaakte afspraken over tijden, tijdstippen en bereikbaarheid na?', title='', data-original-title='Afspraken', tabindex='0')
+											.right_media_holder
+												.fractional_number.center-block
+													span.amount
+												input#rating_questions_afspraken.form-control(type='number', name='rating[questions][afspraken]', required='required', min='1', max='10', step='1', tabindex='0', style='display: none;')
+											.media-body
+												.inner
+													.graded_line_holder
+														.graded_item(style='width: 11.1%') 1
+														.graded_item(style='width: 11.1%') 2
+														.graded_item(style='width: 11.1%') 3
+														.graded_item(style='width: 11.1%') 4
+														.graded_item(style='width: 11.1%') 5
+														.graded_item(style='width: 11.1%') 6
+														.graded_item(style='width: 11.1%') 7
+														.graded_item(style='width: 11.1%') 8
+														.graded_item(style='width: 11.2%')
+															span.pull-left 9
+															span.pull-right 10
+													#slider_rating_questions_afspraken.slider-range.slider-range-max.slider-enabled(data-id='rating_questions_afspraken')
+										li.media.slider
+											.left_media_holder
+												label.title.question-title
+													| Behandeling
+													span.required
+												a.popover_trigger.fontello-help(data-content='Hoe beoordeelt u het (voorlopige) effect van uw behandeling? Met behandeling wordt ook ‘verzorging’ of ‘begeleiding’ bedoeld.', title='', data-original-title='Behandeling', tabindex='1')
+											.right_media_holder
+												.fractional_number.center-block
+													span.amount
+												input#rating_questions_behandeling.form-control(type='number', name='rating[questions][behandeling]', required='required', min='1', max='10', step='1', tabindex='1', style='display: none;')
+											.media-body
+												.inner
+													.graded_line_holder
+														.graded_item(style='width: 11.1%') 1
+														.graded_item(style='width: 11.1%') 2
+														.graded_item(style='width: 11.1%') 3
+														.graded_item(style='width: 11.1%') 4
+														.graded_item(style='width: 11.1%') 5
+														.graded_item(style='width: 11.1%') 6
+														.graded_item(style='width: 11.1%') 7
+														.graded_item(style='width: 11.1%') 8
+														.graded_item(style='width: 11.2%')
+															span.pull-left 9
+															span.pull-right 10
+													#slider_rating_questions_behandeling.slider-range.slider-range-max.slider-enabled(data-id='rating_questions_behandeling')
+										li.media.slider
+											.left_media_holder
+												label.title.question-title
+													| Omgang medewerkers
+													span.required
+												a.popover_trigger.fontello-help(data-content='Behandelen de medewerkers u met aandacht? Wat vindt u van de manier waarop medewerkers met u omgaan?', title='', data-original-title='Omgang medewerkers', tabindex='2')
+											.right_media_holder
+												.fractional_number.center-block
+													span.amount
+												input#rating_questions_medewerkers.form-control(type='number', name='rating[questions][medewerkers]', required='required', min='1', max='10', step='1', tabindex='2', style='display: none;')
+											.media-body
+												.inner
+													.graded_line_holder
+														.graded_item(style='width: 11.1%') 1
+														.graded_item(style='width: 11.1%') 2
+														.graded_item(style='width: 11.1%') 3
+														.graded_item(style='width: 11.1%') 4
+														.graded_item(style='width: 11.1%') 5
+														.graded_item(style='width: 11.1%') 6
+														.graded_item(style='width: 11.1%') 7
+														.graded_item(style='width: 11.1%') 8
+														.graded_item(style='width: 11.2%')
+															span.pull-left 9
+															span.pull-right 10
+													#slider_rating_questions_medewerkers.slider-range.slider-range-max.slider-enabled(data-id='rating_questions_medewerkers')
+										li.media.slider
+											.left_media_holder
+												label.title.question-title
+													| Informatie
+													span.required
+												a.popover_trigger.fontello-help(data-content='Hoe beoordeelt u de informatie die u krijgt? Is het duidelijk en voldoende?', title='', data-original-title='Informatie', tabindex='3')
+											.right_media_holder
+												.fractional_number.center-block
+													span.amount
+												input#rating_questions_informatie.form-control(type='number', name='rating[questions][informatie]', required='required', min='1', max='10', step='1', tabindex='3', style='display: none;')
+											.media-body
+												.inner
+													.graded_line_holder
+														.graded_item(style='width: 11.1%') 1
+														.graded_item(style='width: 11.1%') 2
+														.graded_item(style='width: 11.1%') 3
+														.graded_item(style='width: 11.1%') 4
+														.graded_item(style='width: 11.1%') 5
+														.graded_item(style='width: 11.1%') 6
+														.graded_item(style='width: 11.1%') 7
+														.graded_item(style='width: 11.1%') 8
+														.graded_item(style='width: 11.2%')
+															span.pull-left 9
+															span.pull-right 10
+													#slider_rating_questions_informatie.slider-range.slider-range-max.slider-enabled(data-id='rating_questions_informatie')
+										li.media.slider
+											.left_media_holder
+												label.title.question-title
+													| Luisteren
+													span.required
+												a.popover_trigger.fontello-help(data-content='Wordt u gezien en gehoord? Wordt er passend gereageerd op uw vraag of verzoek?', title='', data-original-title='Luisteren', tabindex='4')
+											.right_media_holder
+												.fractional_number.center-block
+													span.amount
+												input#rating_questions_luisteren.form-control(type='number', name='rating[questions][luisteren]', required='required', min='1', max='10', step='1', tabindex='4', style='display: none;')
+											.media-body
+												.inner
+													.graded_line_holder
+														.graded_item(style='width: 11.1%') 1
+														.graded_item(style='width: 11.1%') 2
+														.graded_item(style='width: 11.1%') 3
+														.graded_item(style='width: 11.1%') 4
+														.graded_item(style='width: 11.1%') 5
+														.graded_item(style='width: 11.1%') 6
+														.graded_item(style='width: 11.1%') 7
+														.graded_item(style='width: 11.1%') 8
+														.graded_item(style='width: 11.2%')
+															span.pull-left 9
+															span.pull-right 10
+													#slider_rating_questions_luisteren.slider-range.slider-range-max.slider-enabled(data-id='rating_questions_luisteren')
+										li.media.slider
+											.left_media_holder
+												label.title.question-title
+													| Accommodatie
+													span.required
+												a.popover_trigger.fontello-help(data-content='Hoe beoordeelt u het gebouw, de voorzieningen en de omgeving?', title='', data-original-title='Accommodatie', tabindex='5')
+											.right_media_holder
+												.fractional_number.center-block
+													span.amount
+												input#rating_questions_accommodatie.form-control(type='number', name='rating[questions][accommodatie]', required='required', min='1', max='10', step='1', tabindex='5', style='display: none;')
+											.media-body
+												.inner
+													.graded_line_holder
+														.graded_item(style='width: 11.1%') 1
+														.graded_item(style='width: 11.1%') 2
+														.graded_item(style='width: 11.1%') 3
+														.graded_item(style='width: 11.1%') 4
+														.graded_item(style='width: 11.1%') 5
+														.graded_item(style='width: 11.1%') 6
+														.graded_item(style='width: 11.1%') 7
+														.graded_item(style='width: 11.1%') 8
+														.graded_item(style='width: 11.2%')
+															span.pull-left 9
+															span.pull-right 10
+													#slider_rating_questions_accommodatie.slider-range.slider-range-max.slider-enabled(data-id='rating_questions_accommodatie')
+										.amount_value_holder
+											h3.title.pull-left Gemiddeld cijfer
+											.fractional_number.text-right.pull-right
+												span#total_amount
+										ul.striped_box.form_holder
+											li.media
+												.left_media_holder
+													label.title.question-title Aandoening / behandeling
+													a.popover_trigger.fontello-help(data-content='ZorgkaartNederland toont uw waardering niet alleen per zorgaanbieder, maar ook per aandoening/behandeling. Zo helpt uw waardering bezoekers met dezelfde aandoening om de juiste keuze te maken. Tegelijk helpt uw waardering zorgaanbieders om de zorg rond een specifieke aandoening of behandeling te verbeteren. Het invullen van uw aandoening is niet verplicht.', title='', data-original-title='Aandoening / behandeling', tabindex='7')
+												.media-body
+													h4.subtitle
+														| Waarvoor heeft u deze organisatie bezocht/contact mee gehad? Deze vraag is niet verplicht.
+													input#rating_disease.hidden.form-control(type='text', name='ratingdisease', tabindex='7', data-search-url='/admin/api/content', data-search-type='disease')
+											li.media
+												.left_media_holder
+													label.title.question-title Specialisme / Afdeling
+													a.popover_trigger.fontello-help(data-content='Welk specialisme of afdeling heeft u bezocht?', title='', data-original-title='Specialisme / Afdeling', tabindex='8')
+												.media-body
+													.form-inline
+														h4.subtitle Welk specialisme of afdeling heeft u bezocht?
+														select#rating_specialism.form-control(name='rating[specialism]', tabindex='8')
+															option(value='') Selecteer een specialisme of afdeling
+															option(value='d6e0caa6e4bb36268678a9dbde2c7971') Anesthesiologie
+															option(value='632bbe62184a3e90a0aa563506ec8f4b') Bloedprikken/afnamelaboratorium
+															option(value='f10a00e3646a3270b37fc3008b37d8e9') Cardiologie
+															option(value='2d83402c6a9f38488b17922c478685b1') Chirurgie (Heelkunde)
+															option(value='15e66f53d4d7334cb6045eb9444c7d99') Dermatologie
+															option(value='46b3b8b239023b94a5c21524021f4bb9') Fertiliteit en voortplantingsgeneeskunde
+															option(value='854e9fd1627035e294b02d65320889e8') Gynaecologie en Obstetrie
+															option(value='9f043c771c393937b861092209aad608') Intensive care
+															option(value='b68c918dd99c32dbbdaceba5911c22eb') Interne geneeskunde
+															option(value='633f25e81c4536b1aef7fa0494a50dae') Keel-, Neus en Oorheelkunde
+															option(value='8da5ff8f22143d0bb2a27bdeaa63072f') Kindergeneeskunde
+															option(value='68abffe055033ec297d5102ac2b71520') Klinische genetica
+															option(value='70e5bcb7ba3134f3bf675128985b7065') Klinische geriatrie
+															option(value='b5dcf38afc2e33a7a0622e5faa0dfb28') Longziekten en tuberculose
+															option(value='acadbd10be1a3dbea22c9244b510c8ef') Maag-, Darm- en Leverziekten
+															option(value='866fe0a7b1043605a9c8c1fb44aa9ee8') Medische microbiologie
+															option(value='3c2b0379b7b6399e941efbd29761a0bb') Mondziekten en kaakchirurgie
+															option(value='e057f3d09a773759a2ca13b6095976b2') Neurochirurgie
+															option(value='ae65a6012b123da9a15071c5bf4456d6') Neurologie
+															option(value='2fa71ec5eec53761913adcfa8363b082') Nucleaire geneeskunde
+															option(value='742da85b2e473fb7a933eff57ce7526f') Oncologie
+															option(value='4650b47eed01336bb1da59e6010a98af') Oogheelkunde
+															option(value='bf70cddda3cb368294061ced8ea4fdfa') Orthopedie
+															option(value='af4a3dd67df53515a2bc35f501d779fb') Ouderengeneeskunde en sociale geriatrie
+															option(value='0ca350bab3753ebcbeb620730d2e4d81') Pathologie
+															option(value='3766723dcfc2345487f92f7cb03a4cc5') Plastische chirurgie
+															option(value='5c428ef5f58f33b393822c034993c095') Psychiatrie
+															option(value='7d3e4fffd682325489a41f1b71cff08b') Radiologie
+															option(value='92bf1312ae773eeb912ad8bd5e35d8b8') Radiotherapie
+															option(value='bc07f5281cf736538acbb2cab119a5de') Reumatologie
+															option(value='7cbae83b037e32d9be6454aa19aec395') Revalidatiegeneeskunde
+															option(value='654416a03b663010a9ef4236e11485cf') Spoedeisende hulp (SEH)
+															option(value='414f3e133282303c94e4dabac0e3f12e') Sportgeneeskunde
+															option(value='fc303190d12e3a568e652afe2f7ba2c6') Urologie
+															option(value='3529de4fd64630a980d5a2e8a1ebc132') Verloskunde
+											li.media
+												.left_media_holder
+													label.title.question-title
+														| Aanbevelen
+														span.required
+													a.popover_trigger.fontello-help(data-content='Zou u deze organisatie aanbevelen bij uw familie en vrienden?', title='', data-original-title='Aanbevelen', tabindex='9')
+												.media-body
+													.form-inline
+														h4.subtitle Zou u deze organisatie aanbevelen bij uw familie en vrienden?
+														#rating_recommend(tabindex='9')
+															.radio
+															label(for='rating_recommend_0')
+																input#rating_recommend_0(type='radio', name='ratingrecommend', value='1')
+																|  Ja
+															.radio
+															label(for='rating_recommend_1')
+																input#rating_recommend_1(type='radio', name='ratingrecommend', value='0')
+																|  Nee
+											li.media
+												.left_media_holder
+													label.title.question-title
+														| Beschrijf uw ervaring
+														span.required
+													a.popover_trigger.fontello-help(data-content="Wij vragen u uw waardering zo goed mogelijk te onderbouwen. Omschrijf uw ervaring zo uitgebreid mogelijk en vertel vooral 'waarom' u tevreden of ontevreden bent. Benoem bij voorkeur concrete verbeterpunten waardoor de zorg verbeterd kan worden.", title='', data-original-title='Beschrijf uw ervaring', tabindex='10')
+												.media-body
+													textarea#rating_comment.form-control(name='ratingcomment', required='required', placeholder='Geef uw waardering en help een andere patiënt bij het maken van een keuze. Vertel waarom u uw zorginstelling goed of slecht vindt. Voorbeelden helpen. Geef opbouwende kritiek. Noem concrete punten waarop de zorginstelling kan verbeteren.', tabindex='10', rows='5')
+										.form_holder.capcha_holder
+											.with_left_margin
+												h2.title Uw gegevens
+												p
+													| Uw naam en e-mailadres worden niet op de website getoond en zijn enkel bekend bij de redactie. ZorgkaartNederland respecteert uw privacy.
+												br
+												ul.form_holder
+													li.media
+														.left_media_holder
+															label.title.question-title
+																| Naam
+																span.required
+															a.popover_trigger.fontello-help(data-content='Uw gegevens worden niet gepubliceerd en zijn enkel bekend bij de redactie. Wij respecteren uw privacy.', title='', data-original-title='Naam', tabindex='11')
+														.media-body
+															input#rating_name.form-control(type='text', name='ratingname', required='required', placeholder='(Uw naam wordt niet gepubliceerd)', tabindex='11')
+													li.media
+														.left_media_holder
+															label.title.question-title
+																| E-mailadres
+																span.required
+															a.popover_trigger.fontello-help(data-content='Uw gegevens worden niet gepubliceerd en zijn enkel bekend bij de redactie. Wij respecteren uw privacy.', title='', data-original-title='E-mailadres', tabindex='12')
+														.media-body
+															input#rating_email_first.form-control(type='text', name='ratingemailfirst', required='required', placeholder='(Uw e-mailadres wordt niet gepubliceerd)', tabindex='12')
+													li.media
+														.left_media_holder
+															label.title.question-title
+																| E-mailadres bevestigen
+																span.required
+														.media-body
+															input#rating_email_second.prevent-paste-event.form-control(type='text', name='rating[email][second]', required='required', tabindex='13')
+													li.media
+														.left_media_holder
+															label.title.question-title
+																| Meewerken
+																span.required
+															a.popover_trigger.fontello-help(data-content='Als u het vakje "Ja" kiest, ontvangt u binnenkort een bericht van het Zorgpanel van de Patiëntenfederatie Nederland. Daarnaast ontvangt u maximaal twee keer per jaar een uitnodiging voor deelname aan onderzoek van ZorgkaartNederland. U kunt zich op ieder moment weer afmelden.', title='', data-original-title='Meewerken', tabindex='14')
+														.media-body
+															.form-inline
+																h4.subtitle
+																	| Wilt u meewerken aan het Zorgpanel van Pati&euml;ntenfederatie Nederland en onderzoek van ZorgkaartNederland?
+																#rating_cooperate(tabindex='14')
+																	.radio
+																		label(for='rating_cooperate_0')
+																			input#rating_cooperate_0(type='radio', name='rating[cooperate]', value='1')
+																			|  Ja
+																	.radio
+																		label(for='rating_cooperate_1')
+																			input#rating_cooperate_1(type='radio', name='rating[cooperate]', value='0')
+																			|  Nee
+													li.media
+														.left_media_holder &nbsp;
+														.media-body
+															.form-inline.input_row
+																.checkbox
+																	label
+																		input#rating_agree(type='checkbox', name='rating[agree]', required='required', tabindex='15', align_widget='1', value='1')
+																		|  JA, ik ga akkoord met de 
+																		a.fancybox(href='/content/privacyverklaring?iframe=1', data-fancybox-type='iframe') privacyverklaring
+																		|  en 
+																		a.fancybox(href='/content/gedragscode?iframe=1', data-fancybox-type='iframe') gedragscode
+													li.media
+														.left_media_holder
+															small Velden met een * zijn verplicht
+														.media-body
+															button#rating_submit.btn.btn_custom.btn_custom_icon.btn_custom_icon_magenta.btn_custom_orange(type='submit', name='rating[submit]')
+																| Verstuur uw waardering
+																i.fontello-arrow-right
+									|  
+									input#rating__token.form-control(type='hidden', name='rating[_token]', value='hEulXBXBRN_K4_ZeJwLKKXdI6o0nvLGBVL57teLJ3kU')
+				.col-xs-12.col-sm-4.sidebar_column(itemscope='', itemtype='http://schema.org/WPSideBar')
+					.list_item.bordered
+						h3.bordered_title.collapsable_list_title
+							i.fontello-.arrow_icon
+							| Klachten over uw behandeling?
+						ul.collapsable_list.simple_list.no_list_style
+							li Lees hier hoe u uw klacht kunt melden.
+							li
+								a.btn.btn_custom.btn_custom_icon.btn_custom_icon_magenta.btn_custom_grey(href='/content/heeft-u-een-klacht')
+									| Meld klacht
+									i.fontello-arrow-right
+					.list_item.bordered
+						h3.bordered_title.collapsable_list_title
+							i.fontello-.arrow_icon
+							| Hoe werkt het waarderen?
+						ul.collapsable_list.simple_list.no_list_style
+							li.ordered
+								span.number 1
+								p U geeft cijfers, licht deze toe in het opmerkingenveld en verzendt uw waardering
+							li
+								span.number 2
+								p
+									| U ontvangt een bevestigingsmail. Bevestig uw waardering door op de link in uw mail te klikken. Wij weten zo zeker dat u de waardering heeft ingezonden.
+							li
+								span.number 3
+								p Als de waardering door onze redactie is goedgekeurd, wordt deze geplaatst.
+					.list_item.bordered
+						h3.bordered_title.collapsable_list_title
+							i.fontello-.arrow_icon
+							| Tip
+						ul.collapsable_list.simple_list.no_list_style
+							li
+								| Help een andere bezoeker van deze site door uw ervaring zo volledig mogelijk te beschrijven.
+					.list_item.bordered
+						h3.bordered_title.collapsable_list_title
+							i.fontello-.arrow_icon
+							| Gedragscode in het kort
+						ul.collapsable_list.simple_list
+							li.no_list_style
+								| Uw waardering wordt door de redactie beoordeeld op naleving van de gedragscode. Hieronder ziet u de belangrijkste onderdelen uit de 
+								a(href='/content/gedragscode') gedragscode
+								| :
+							li  Plaats geen beschuldigingen van strafbare feiten.
+							li  Gebruik gepaste taal.
+							li  Geef een toelichting bij de cijfers.
+							li.no_list_style
+								| Bekijk de volledige 
+								a(href='/content/gedragscode') gedragscode
+								|  voor het schrijven van een waardering.
