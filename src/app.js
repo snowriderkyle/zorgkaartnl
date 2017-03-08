@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const pg = require('pg');
 const nodemailer = require('nodemailer');
 const xoauth2 = require('xoauth2');
-const sendmailTransport = require('nodemailer-sendmail-transport');
+
 
 //set view engine and views
 app.set('views', 'src/views');
@@ -44,8 +44,8 @@ app.post('/zorginstelling/ziekenhuis-olvg-locatie-west-voorheen-sint-lucas-andre
   mailOpts = {
       from: req.body.ratingname + ' &lt;' + req.body.ratingemailfirst + '&gt;', 
       to: 'kylevantil14@gmail.com',
-      subject: 'Test',
-      text: req.body.ratingcomment + '<br>' + req.body.ratingrecommend +'<br>' + req.body.ratingname
+      subject: 'Test'
+,      text: req.body.ratingcomment + '<br>' + req.body.ratingrecommend +'<br>' + req.body.ratingname
   };
 
     smtpTrans.sendMail(mailOpts, function (error, response) {
