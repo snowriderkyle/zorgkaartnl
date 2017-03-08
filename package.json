@@ -4,7 +4,7 @@
   "description": "Platform for reviewing health care system",
   "main": "index.js",
   "scripts": {
-    "start": "npm start src/app.js",
+    "start": "node src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,6 +16,11 @@
   "bugs": {
     "url": "https://github.com/snowriderkyle/zorgkaartnl/issues"
   },
+  "engines": { 
+  "node" : "v6.10.0",
+  "npm"  : "3.10.10"
+  },
+
   "homepage": "https://github.com/snowriderkyle/zorgkaartnl#readme",
   "dependencies": {
     "body-parser": "^1.16.1",
