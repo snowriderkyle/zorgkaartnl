@@ -62,7 +62,8 @@ app.post('/zorginstelling/ziekenhuis-olvg-locatie-west-voorheen-sint-lucas-andre
       });
 
 
-var server = app.listen(4000, function () {
-		console.log('Example app listening on port: ' + server.address().port);
-	});
+//var server = app.listen(4000, function () {
+//		console.log('Example app listening on port: ' + server.address().port);
+//	});
 
+app.listen(process.env.PORT)
